@@ -1,13 +1,8 @@
-package com.pedrorenzo.java12;
+package com.nashtech.java12;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-/**
- * We have now some different ways to format numbers.
- * 
- * @author pedrorenzo
- */
 public class NumberFormats {
 	
 	public static void main(String[] args) {

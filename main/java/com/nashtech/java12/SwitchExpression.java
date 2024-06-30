@@ -1,18 +1,6 @@
-package com.pedrorenzo.java12;
+package com.nashtech.java12;
 
-/**
- * The switch case syntax is very simple now with Java 12! We do not need to use
- * break!
- * 
- * @author pedrorenzo
- */
 public class SwitchExpression {
-
-	// We could also use an enum!
-//	enum Month {
-//	    JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
-//	};
-	
 	final static String JANUARY = "JANUARY";
 	final static String FEBRUARY = "FEBRUARY";
 	final static String MARCH = "MARCH";
@@ -32,7 +20,6 @@ public class SwitchExpression {
 		switchExpression.fromJava12(FEBRUARY);
 	}
 
-	// public void beforeJava12(final Month month) { --> If we used enum.
 	public void beforeJava12(final String month) {
 		String season = "";
 		switch (month) {
@@ -69,15 +56,6 @@ public class SwitchExpression {
 		case JUNE, JULY, AUGUST, SEPTEMBER -> season = "Rainy";
 		case OCTOBER, NOVEMBER, DECEMBER -> season = "Winter";
 		}
-
-		// We could also do it: Instead of have the code season = ... in each case, we could directly
-		// assign the result of the switch case in this variable!
-//		String season = switch (month) {
-//		case JANUARY -> "Winter";
-//		case FEBRUARY, MARCH, APRIL, MAY -> "Summer";
-//		case JUNE, JULY, AUGUST, SEPTEMBER -> "Rainy";
-//		case OCTOBER, NOVEMBER, DECEMBER -> "Winter";
-//		}
 
 		System.out.println("From Java 12 Month: " + month + " Season: " + season);
 	}

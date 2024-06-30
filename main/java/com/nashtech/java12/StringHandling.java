@@ -1,10 +1,5 @@
-package com.pedrorenzo.java12;
+package com.nashtech.java12;
 
-/**
- * We have two more new methods in String class: transform() and ident().
- * 
- * @author pedrorenzo
- */
 public class StringHandling {
 
 	public static void main(String[] args) {
